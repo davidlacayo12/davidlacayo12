@@ -8,6 +8,7 @@ This is where I keep a bunch of tutorials and projects that I have been working 
   - 
 - HTML Files will have all of my projects dedicated to the coding language of HTML:
   - Tutorial: mycodeacademy tutorial for HTML 
+  - CSS Tutorial with styling practice
 - Python Files will have copies from my desktop repo since I use a different interface than VSCode to run python: 
   - Beat maker: Beginner level music interface for making beats
   - Tutorial: mycodeacademy tutorial for python
