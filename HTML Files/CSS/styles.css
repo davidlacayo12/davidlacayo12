@@ -1,3 +1,9 @@
-body {
-    background:red;
+.title {
+    color:red;
+}
+.subtitle {
+    color:blue;
+}
+#contact-us {
+    color:green;
 }
