@@ -1,4 +1,4 @@
-/*
+/*classes/ID's*/
 .title {
     color:red;
 }
@@ -8,5 +8,51 @@
 #contact-us {
     color:green;
 }
+
+/*Psuedoselectors*/
+
+h2:hover {
+    color:red;
+}
+.subtitle {
+    color:blue;
+}
+#services {
+    color: green;
+}/*
+li:last-child {         last child will be steel blue in the bulleted list
+    color:steelblue;
+}
+li:nth-child(2) {          every 2nd child will be steel blue of the bulleted list
+    color:steelblue;
+}
+td:only-child {             DOESN'T WORK because there is not one child in the table
+    color:purple;
+}
+#google-link:link {
+    color:blue;
+}
+
+#google-link:visited {
+    color: red;
+
+}
 */
 
+/*Advanced Selectors*/
+
+h2 + a {
+    color:red;
+}
+textarea ~ button {
+    color:purple;
+}
+
+ul > li {
+    color:blue;
+}
+
+/*ul li {
+    color:green;
+}
+*/
