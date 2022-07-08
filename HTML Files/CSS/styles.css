@@ -3,7 +3,7 @@
     color:red;
 }
 .subtitle {
-    color:blue;
+    color:black;
 }
 #contact-us {
     color:green;
@@ -14,9 +14,11 @@
 h2:hover {
     color:red;
 }
-.subtitle {
+/*
+h2[class=subtitle] {
     color:blue;
 }
+*/
 #services {
     color: green;
 }/*
@@ -55,4 +57,18 @@ ul > li {
 /*ul li {
     color:green;
 }
+
+
+*/
+
+/*Special Attributes*/
+img[src*="img/"] {
+    border: px solid black;
+}
+h2[class~=article-subtitle] {
+    background: green;
+}
+/*
+    subtitle-20935
+    subtitle-45459
 */
