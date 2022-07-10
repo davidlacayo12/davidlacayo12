@@ -49,7 +49,6 @@ h2 + a {
 textarea ~ button {
     color:purple;
 }
-
 ul > li {
     color:blue;
 }
