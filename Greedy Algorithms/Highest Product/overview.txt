@@ -1,0 +1,15 @@
+Given an array of N integers, Find the highest product by multiplying 3 elements
+Constraints: 3<= N <=5e5
+
+ex) 
+    - Input: [1, 2, 3, 4]
+    - Output: 2 * 3 * 4 = 24
+    - Input: [0, -1, 10, 7, 5]
+    -Output: 5 * 7 * 10 = 350
+
+
+Solution: we can sort the array, and take the highest 3 elements to find the highest product
+    - ISSUE: What if there are 2 negatives that multiply to a positive? 
+
+NEW Solution: Consider the case where there are 2 negative values and 1 positive value to calculate our highest product, as well as our original answer
+    - Take highest 3, or consider lowest 2 and highest 1

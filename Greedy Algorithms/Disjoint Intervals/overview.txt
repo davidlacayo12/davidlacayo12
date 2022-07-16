@@ -1,0 +1,13 @@
+Given a list of intervals: [start, end], find the length of the maximal set of mutually disjoint intervals
+Contraints: 1<= N <=1e5, 1<= A[i][0] <=1e9
+
+ex) 
+    - Input: [[1,2], [2,10], [4,6]]
+    - Output: 2
+
+    Explanation: Select [1,2] and [4,6]; selecting [2,10] will block [1,2] and [4,6] 
+
+Solution: Use Dynamic Programming
+    - Starts Later? NO
+    - Ends Early? YES
+    
