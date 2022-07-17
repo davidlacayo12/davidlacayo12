@@ -15,7 +15,7 @@ class Solution:
             else:
                 B -= 1
                 A[i], A[j] = A[j], A[i]
-                d[A[i]], d[A[j]] = d[a[j]], d[A[i]]
+                d[A[i]], d[A[j]] = d[A[j]], d[A[i]]
 
             i += 1
             _max -= 1
