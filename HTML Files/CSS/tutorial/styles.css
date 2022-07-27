@@ -86,16 +86,23 @@ CSS General Rule
 /*When you are designing websites and using colors, use a color picker instead of memorizing color theory*/
 
 /*Coloring Text, Images/URLs and background properties*/
+/*Text transform allows you to change text properties (and text-decoration as well). Text align moves text in line with a property */
+/**/
+
 
 body{
     background: linear-gradient(to bottom, rgb(204, 225, 255), rgba(204, 225, 255, 0.4));
+    font-size: 1.25em;        
+    text-align:justify;
 }
 
 #title{
     color: rgb(186, 133, 9);
+    font-weight: 800;
 
 
 }
+
 .subtitle {
     color: rgb(200,148,30);
 
@@ -109,5 +116,10 @@ body{
 
 }
 
+.link { 
+    text-decoration: underline;
+}
 
-
+.italic {
+    font-style: italic;
+}
