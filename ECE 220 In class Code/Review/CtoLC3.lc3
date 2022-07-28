@@ -1,0 +1,48 @@
+;/* Function to determine if given Binary Tree is a BST or not by keeping a
+;valid range (starting from [MIN_VALUE, MAX_VALUE]) and keep shrinking it down
+;for each node as we go down recursively */
+;/*
+;    typedef struct NODE t_node;
+;    struct NODE{
+;    t_node *left;
+;    t_node *right;
+;    int val;
+;};
+;
+;    int isBST(t_node *node, int min, int max){
+;    int lBST;
+;    int rBST;
+;    # basecase
+;;    if(node == NULL)
+;    return 1;
+;    # if node val fall outside of valid range
+;    if(node->val < min || node->val > max)
+;    return 0;
+;    # recursivley check left/right subtree with updated range
+;    lBST = isBST(node->left, min, node->val);
+;    rBST = isBST(node->right, node->val, max);
+;    return lBST && rBST;
+;}
+;*/
+
+.ORIG x3000
+
+LD R6, STACK
+ADD R5,R6, #0
+;int max = 15
+;int min = 
+LD  R0, MAX
+LD  R1, MIN
+LD  R2,ROOT
+
+
+HALT
+
+
+RET
+
+.FILL  x5000 STACK 
+
+
+
+.END

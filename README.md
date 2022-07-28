@@ -6,6 +6,8 @@ This is where I keep a bunch of tutorials and projects that I have been working 
   - Tutorial: mycodeacademy tutorial for C and C++ 
   - Matching app: Simulation I am trying to run for using merge sort and other sorting algorithms to sort and match profiles like Tinder or Match.com
   - 
+- ECE 220 In class Code
+  - This folder contains all of the code written in class for ECE 220, which specifically, has examples involving dynamic memory, pointers, recursion, arrays, linked lists and trees
 - HTML Files will have all of my projects dedicated to the coding language of HTML:
   - Tutorial: mycodeacademy tutorial for HTML 
   - CSS Tutorial with styling practice
