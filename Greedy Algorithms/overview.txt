@@ -1,6 +1,0 @@
-Given N bulbs, either on (1) or off(0). Turning on the ith bulb causes all remaining bulbs on the right to flip.
-
-Find the minimum number of switches to turn all the bulbs on. 
-
-Contraints: 1<= N <= 1e5
-A[i] = {0,1}
