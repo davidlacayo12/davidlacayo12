@@ -15,7 +15,7 @@ This is where I keep a bunch of tutorials and projects that I have been working 
   - CSS Tutorial with styling practice
 
 - Python Files will have copies from my desktop repo since I use a different interface than VSCode to run python: 
-  - 
+  - beginner projects will contain "learn by doing" for python syntax practice, by building a bunch of beginner programs 
 
 - JavaScript Files will have all of my projects dedicated to the coding language of JavaScript (and a little bit of typescript)
   - EMPTY FOR NOW 
