@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "NQueen.C": "cpp"
+        "NQueen.C": "cpp",
+        "ostream": "cpp"
     }
 }

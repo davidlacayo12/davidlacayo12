@@ -3,6 +3,8 @@
 using std::cout;
 using std::endl;
 using cs225::Cube;
+
+
 //Use nullptr instead of NULL from now on-- better coding practice and a keyword in C++ 
 //macros are ALWAYS capatalized --> EX) #define COUNT 5 
 /*Encapsulation is the process of separating the interface from the implementation (in terms of classes)
@@ -12,6 +14,7 @@ using cs225::Cube;
         header file: contains the interface, and describes how you access and use a class (tells people HOW to use the code)
         code file (or C++ file): implementation  (How code is implemented)
 */
+
 /*Constructor
     Compiler provides 'Default constructor' 
     zero args
@@ -74,6 +77,26 @@ using cs225::Cube;
         - Functionality --> calls the destructor on each member variable 
 
 */
+
+/* Overloading 
+    -Operators that can be overlaoded in C++: +, -, *, /, %, ++, --, &, |, ^, ~, <<, >>, =, ==, !=, >,<, >=, <=, !, &&, ||, [], (), ->
+    - Definition Syntax(.h) --> Cube & operator = (const Cube& s)
+    - Implementation Syntax(.cpp) --> Cube & Cube::operator = (const Cube& s)
+
+    -Assignment operator:
+        -Similar to copy constructor: make LHS be the same value as RHS 
+        -Different from copy constructor: clean out old values in LHS 
+
+    -Copy Assignment Operator: 
+        - Copies and object, AND destroys the object, unlike copy constructors and destructors which only do one 
+        - private member function: clear_() --> clears of memory
+                                    copy_(a) --> copy into LHS
+*/
+
+//Rule of 3: Assignment operator, copy constructor, destructor --> must implement all 3 or none
+//Rule of zero: Classes that declare custom destructors, copy/move constructors or copy/move assignment operators should deal exclusively with ownership
+//              Other classes should NOT do these things
+
 int main() {
     cs225::Cube c(5.0);      //declares c as a local variable of type cs225::Cube, and takes in a double for the constructor
     cout << "Volume: " << c.getVolume() <<endl;
