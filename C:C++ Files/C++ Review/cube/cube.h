@@ -3,12 +3,16 @@
 namespace cs225 {    
     class Cube {
         public:     //interface for everyone
+            Cube();
             Cube(double length);     //default constructor -->custom constructor -->adding in your own constructor gets rid of the default one 
-            double getVolume();
+            Cube(const Cube & other);   //copy constructor
+
+            double getVolume() const;   //if using const, must change in .h file
             double getSurfaceArea();
+            void setLength(double length);
 
         private:        //private interface (not for everyone)
-            double length_;
+            double length_;     //<-- private is really TO CLASS 
 
     };
 }

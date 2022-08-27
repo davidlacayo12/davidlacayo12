@@ -43,6 +43,37 @@ using cs225::Cube;
             v->     follows the pointer and calls the function. p1->getVolume() same as: (*p1).getVolume() 
 */
 
+/*Using const
+    - const modifies a type in general and says that it can't be changed 
+    - example is in joinCubes-byRef-const.cpp
+*/
+
+/* Copy Constructor
+    - makes a copy of the object of the class 
+    - Cube c1(5); 
+    - Cube c2 = c1; copy constructor
+    - Cube c3; default constructor 
+    - c3 = c1; --> assignment 
+    - Cube c2(c1); copy constructor 3
+
+    Copy constructor:    ONLY ONE PER CLASS 
+        - Automatic Copy constructor
+            - Make a new object of type that is initialized by calling the copy constructor on every member variable 
+        
+        - Custom Copy constructor 
+            Cube(const Cube & other)    HAS TO BE A REFERENCE 
+*/          
+
+/* Destructor: 
+    - Purpose: To release any resources allocated by the object 
+    - Run on either delete or when a stack allocated object leaves scope 
+
+    - Automatic Destructor: 
+        - Exists only when no custom destructor is defined 
+        - Invoked --> stack objects leaves scope, or on delete 
+        - Functionality --> calls the destructor on each member variable 
+
+*/
 int main() {
     cs225::Cube c(5.0);      //declares c as a local variable of type cs225::Cube, and takes in a double for the constructor
     cout << "Volume: " << c.getVolume() <<endl;
