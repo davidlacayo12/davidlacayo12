@@ -93,6 +93,14 @@ using cs225::Cube;
                                     copy_(a) --> copy into LHS
 */
 
+/* Inheritance & polymorphism
+    - For inheritance, we will be doing extremely simple applications
+    - Polymorphism is the idea that a single interface may take multiple types or that a single symbol may be different types 
+        - Must use either a pointer or a reference to do this in C++
+        - Shown in Rubik folder --> use "virtual" keyword -->1) look at type, 2) look for method (look for derived type (if virtual)) otherwise use method, 3)recures to base type --> go to 2
+
+*/
+
 //Rule of 3: Assignment operator, copy constructor, destructor --> must implement all 3 or none
 //Rule of zero: Classes that declare custom destructors, copy/move constructors or copy/move assignment operators should deal exclusively with ownership
 //              Other classes should NOT do these things
