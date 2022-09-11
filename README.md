@@ -6,6 +6,7 @@ This is where I keep a bunch of tutorials and projects that I have been working 
   - Tutorial: mycodeacademy tutorial for C and C++ 
   - Matching app: Simulation I am trying to run for using merge sort and other sorting algorithms to sort and match profiles like Tinder or Match.com
   - Morse Code Translator: Project where user inputs a string that gets translated character by character into morse code
+  - Contains Review for CS 225 (C++) and POTD code for CS 225 as well
 
 - ECE 220 In class Code
   - This folder contains all of the code written in class for ECE 220, which specifically, has examples involving dynamic memory, pointers, recursion, arrays, linked lists and trees
@@ -21,7 +22,8 @@ This is where I keep a bunch of tutorials and projects that I have been working 
   - EMPTY FOR NOW 
 
 - React Files will have all of my projects dedicated to building front end in react/react-native:
-  - EMPTY FOR NOW (but add my work on pupil website and pupil app) 
+  - Added work for a simple little application to get accustomed to React backend (with Javascript)
+  - Add Pupil files 
 
 - MYSQL Files will have all of my projects dedicated to building backend through MYSQL and other backend languages and interfaces like MongoDB:
   - EMPTY FOR NOW
