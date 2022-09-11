@@ -1,0 +1,3 @@
+These are ALL of the problem of the days from CS225-- the ones that I 
+completed will be in the folders with the following code as well as their
+makefiles. 
