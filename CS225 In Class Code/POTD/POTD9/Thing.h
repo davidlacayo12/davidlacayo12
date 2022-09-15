@@ -6,8 +6,8 @@ namespace potd {
   class Thing {
   public:
     Thing(int size);
-    Thing(const Thing & t);
-    Thing & operator=(const Thing & t);
+    Thing(const Thing & other);
+    Thing & operator=(const Thing & other);
     ~Thing();
 
     int set_property(std::string name,std::string value);
@@ -15,7 +15,7 @@ namespace potd {
 
   private:
 
-    void _copy(const Thing & t);
+    void _copy(const Thing & other);
     void _destroy();
 
     std::string *properties_;
