@@ -9,6 +9,7 @@ This is where I keep a bunch of tutorials and projects that I have been working 
   - Contains Review for CS 225 (C++) 
 
 - CS 225 In Class code: Contains POTD problems and in class code used for examples in lecture 
+  *NOTE* -> Plagarism is NOT ok. Owner of repo is NOT responsible for any plagarism that may come as a result of this folder. If you are using this code, it is plagarism-- go do it yourself. 
 
 - ECE 220 In class Code
   - This folder contains all of the code written in class for ECE 220, which specifically, has examples involving dynamic memory, pointers, recursion, arrays, linked lists and trees
