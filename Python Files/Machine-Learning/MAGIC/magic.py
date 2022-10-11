@@ -6,6 +6,7 @@ from imblearn.over_sampling import RandomOverSampler
 
 
 #Dataset found from UCI machine learning repository 
+#loss = -1/N * sum(Y_real * log(Y_predicted) + (1-Y_real) * log(1-Y_predicted))
 
 cols = ["Length", "width", "fSize", "fConc", "fConcl", "fAsym", "fM3Long", "FM3Trans", "fAlpha", "fDist", "class"]
 df = pd.read_csv("/Users/davidlacayo/Desktop/Personal-Github/Python Files/Machine-Learning/MAGIC/magic04.data", names=cols) 

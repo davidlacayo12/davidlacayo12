@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
 #define SIZE 5
 
 //helper functions
@@ -15,7 +18,7 @@ int main(){
 
 }
 
-void print_1D(int array[], SIZE ){
+void print_1D(int array[], SIZE){
     for(int i =0; i < SIZE; i++){
         printf("%d", array[i]);
     }
