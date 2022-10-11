@@ -3,10 +3,15 @@ import pandas as pd
 import matplotlib.pyplot as plt 
 from sklearn.preprocessing import StandardScaler
 from imblearn.over_sampling import RandomOverSampler
-
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import classification_report
 
 #Dataset found from UCI machine learning repository 
 #loss = -1/N * sum(Y_real * log(Y_predicted) + (1-Y_real) * log(1-Y_predicted))
+#Euclidean distance: d = sqrt( (x1-x2)^2 + (y1-y2)^2 )
+#Bayes' Rule: P(A|B) = ( P(B|A) * P(A) ) / P(B)
+#                       likelihood times prior, over evidence 
+#
 
 cols = ["Length", "width", "fSize", "fConc", "fConcl", "fAsym", "fM3Long", "FM3Trans", "fAlpha", "fDist", "class"]
 df = pd.read_csv("/Users/davidlacayo/Desktop/Personal-Github/Python Files/Machine-Learning/MAGIC/magic04.data", names=cols) 
@@ -46,3 +51,10 @@ def scale_dataset(dataframe, oversample=False):
 train, x_train, y_train = scale_dataset(train, oversample=True)
 valid, x_valid, y_valid = scale_dataset(valid, oversample=False)
 test, x_test, y_test = scale_dataset(test, oversample= False)
+
+knn_model = KNeighborsClassifier(n_neighbors= 3)
+knn_model.fit(x_train, y_train)
+KNeighborsClassifier(n_neighbors=1)
+
+y_pred = knn_model.predict(x_test)
+print(classification_report(y_test, y_pred))
