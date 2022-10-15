@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <unistd.h>
 
 #define START 0
 #define END 40
@@ -9,6 +10,8 @@
 
 void balance(double arr[], double ave); 
 double calcAverage(double arr[]);
+double calcMax(double arr[]);
+double calcMin(double arr[]);
 void printArr(double arr[]);
 
 /*
@@ -27,33 +30,54 @@ void printArr(double arr[]);
 
 int main() {
 
-    double cells[END-START];
-    /*Use to stop while loop*/    
-    while(1) {
-        //For loop stores random numbers in our array 
-        for(int i = START; i < END; i++) {
-            cells[i] = (rand() % 10) + 1;
-        } 
+    double cells[END-START]; 
+    for(int i = START; i < END; i++) {  //initializes array of cells to a start value 
+        cells[i] = 2.5;
+    }   
+    //  for(int i = START; i < END; i++) {
+    //     cells[i] = (rand() % 5) + 1;
+    // } 
 
+    while(1) {
         //Prints before balancing algorithm is active
         printf("Before balancing \n");
         printArr(cells);
 
         //calculate average of cells (Can be done in main method)
         double average = calcAverage(cells);
-        //Balances the cell 
-        balance(cells, average);
+        double max = calcMax(cells);
+        double min = calcMin(cells);
 
+        //Balances the cell 
+        if(max > OV) {
+            exit(1);    //if a max voltage in our cells is over the overvault, stop balancing
+            //Need to send messages before exit, and stop charging 
+        }
+        if(max < OV && min > UV) {
+            balance(cells, average);
+        }
+      
         //Prints array after balancing algorithm has been implemented 
         printf("After Balancing: \n");
         printArr(cells);
 
+        for(int i = START; i < END; i++) {  //increase cells 3 ways to simulate different voltage rates across cells 
+            if(i % 2 == 0) {
+                cells[i] += 0.1;
+            }
+            else if(i % 3 == 0) {
+                cells[i] += 0.15;
+            }
+            else {
+                cells[i] += 0.05;
+            }
+        }
+        sleep(1);
     }
-    
-
 }
 
-double calcAverage(double arr[]) {
+//helper function for calculating the average of our cells 
+double calcAverage(double arr[]) {  
     double average = 0;
     double numCell = END - START;
 
@@ -63,6 +87,29 @@ double calcAverage(double arr[]) {
     return (average / numCell);
 }
 
+//helper function for calculating the max of our cells 
+double calcMax(double arr[]) {
+    double max = 0;
+    for (int cell = START; cell < END; cell++) {
+        if(arr[cell] > max) {
+            max = arr[cell];
+        }
+    }
+    return max;
+}
+
+//helper function for calculating the max of our cells
+double calcMin(double arr[]) {
+    double min = arr[0];
+    for(int cell = 1; cell < END; cell++) {
+        if(arr[cell] < min) {
+            min = arr[cell];
+        }
+    }
+    return min;
+}
+
+//helper function that sets the value of each cell to the average
 void balance(double arr[], double average) {
     for(int cell = START; cell < END; cell++) {
         arr[cell] = average;
