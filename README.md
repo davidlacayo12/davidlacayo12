@@ -8,9 +8,6 @@ This is where I keep a bunch of tutorials and projects that I have been working 
   - Morse Code Translator: Project where user inputs a string that gets translated character by character into morse code
   - Contains Review for CS 225 (C++) 
 
-- CS 225 In Class code: Contains POTD problems and in class code used for examples in lecture 
-  *NOTE* -> Plagarism is NOT ok. Owner of repo is NOT responsible for any plagarism that may come as a result of this folder. If you are using this code, it is plagarism-- go do it yourself. 
-
 - ECE 220 In class Code
   - This folder contains all of the code written in class for ECE 220, which specifically, has examples involving dynamic memory, pointers, recursion, arrays, linked lists and trees
 
@@ -19,10 +16,11 @@ This is where I keep a bunch of tutorials and projects that I have been working 
   - CSS Tutorial with styling practice
 
 - Python Files will have copies from my desktop repo since I use a different interface than VSCode to run python: 
-  - beginner projects will contain "learn by doing" for python syntax practice, by building a bunch of beginner programs 
+  - contains games folder which has games that I have worked on to practice python, as well as learn pygame
+  - Machine Learning folder contains files from machine learning techniques that I have been learning 
 
 - JavaScript Files will have all of my projects dedicated to the coding language of JavaScript (and a little bit of typescript)
-  - EMPTY FOR NOW 
+  - Files for personal website  
 
 - React Files will have all of my projects dedicated to building front end in react/react-native:
   - Added work for a simple little application to get accustomed to React backend (with Javascript)
