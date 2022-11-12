@@ -4,7 +4,7 @@
 #include <unistd.h>
 
 #define START 0
-#define END 40
+#define END 32
 #define OV 4.1670           //voltage maximum per battery 
 #define UV 2.750            //voltage minimum per battery, but not too worried about this 
 
@@ -34,7 +34,7 @@ int main() {
     for(int i = START; i < END; i++) {  //initializes array of cells to a start value 
         cells[i] = 2.5;
     }   
-    //  for(int i = START; i < END; i++) {
+    //  for(int i = START; i < END; i++) {  //initializes random cell values to start off with 
     //     cells[i] = (rand() % 5) + 1;
     // } 
 
