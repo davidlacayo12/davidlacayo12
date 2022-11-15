@@ -10,6 +10,9 @@ This is where I keep a bunch of tutorials and projects that I have been working 
   - Contains a Morse code translator that I created myself
   - Rotating cube: Visualization of differential equations using C++ on a square
 
+- ECE 220 In Class Code: 
+  - Contains code that was covers in ECE 220 (during class, specific examples for recursion, trees, pointers, lists, and more)
+
 - HTML Files will have all of my projects dedicated to the coding language of HTML:
   - Tutorial: mycodeacademy tutorial for HTML 
   - CSS Tutorial with styling practice
@@ -20,6 +23,8 @@ This is where I keep a bunch of tutorials and projects that I have been working 
 
 - JavaScript Files will have all of my projects dedicated to the coding language of JavaScript (and a little bit of typescript)
   - Files for personal website  
+  - IOS Calculator App
+  - Tic Tac Toe Website Application
 
 - React Files will have all of my projects dedicated to building front end in react/react-native:
   - Added work for a simple little application to get accustomed to React backend (with Javascript)
