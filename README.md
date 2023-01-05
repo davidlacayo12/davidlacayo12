@@ -28,7 +28,6 @@ This is where I keep a bunch of tutorials and projects that I have been working 
 
 - React Files will have all of my projects dedicated to building front end in react/react-native:
   - Added work for a simple little application to get accustomed to React backend (with Javascript)
-  - Add Pupil files 
 
 - Greedy Algorithms will have a bunch of example problems that are similar to coding interview questions that I have done 
   - Main language will be python for some, but C/C++ will also be another language I use, since it is crucial to have a core language. However, I will be doing python as well to get comfortable with arguably the most popular/user friendly/ versatile language out there 
