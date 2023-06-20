@@ -1,19 +1,8 @@
 #include <iostream>
-#include <string.h>
+#include "Utils.h"
 
-class Company{
-    private: 
-        char name[30];
-        double stock_value;
+int calc_average(int a, int b);
 
-    public:
-        Company(){};    //Default constructor 
-        char[] get_name(){return name;}
-        void set_name(char[] new_name){name = new_name;}
-        double get_stock_value(){return stock_value;}
-        void set_stock_value(double value){stock_value = value;}
-}
+int calc_1D_vector_average(vector<int> v);
 
-double calculate_average(double a, double b);
-double calculate_sum_array(double arr[], int length);
-double calculate_sum_double_array(double arr[][], int row, int col);
+int calc_2D_vector_average(vector<vector<int> > v);
