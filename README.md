@@ -1,34 +1,15 @@
-Welcome to my Personal Github
+* Welcome to my Public Repository! 
 
-This is where I keep a bunch of tutorials and projects that I have been working on. Good luck. It is organized to me, but only to me. 
+  - This repo is organized by language and project
+    - "Arduino Files" contains code I practiced on my arduino as well as the pdf visual of what the project looked like 
 
-- C/C++ Files will have all of my projects dedicated to the coding language of C/C++ and maybe even C#, but I will likely make a new folder for that:
-  - Tutorial: mycodeacademy tutorial for C and C++ 
-  - Matching app: Simulation I am trying to run for using merge sort and other sorting algorithms to sort and match profiles like Tinder or Match.com
-  - Morse Code Translator: Project where user inputs a string that gets translated character by character into morse code
-  - Contains Review for CS 225 (C++) 
-  - Contains a Morse code translator that I created myself
-  - Rotating cube: Visualization of differential equations using C++ on a square
+    - In "C/C++ Files", there are a bunch of smaller folders: 
+      - One contains the Battery management balancing algorithm and other small drafts for our accumulator for Formula 1 Electric. 
+      - Another contains Leetcode Interview Problem Practice
+      - And then there are smaller projects
+    
+    - Then, there are a couple of projects: 
+      - "Road Network" is a google maps / waze replication that uses different graph algorithms and personal preference to come up with the fastest path from source to destination. It is used on a road network graph of North America. This project is in C++. 
+      - "Pitfall" is a remake in System Verilog with VGA applications. Pitfall was an old 80's video game (the first temple run), and I decided to remake it in verilog. Still a work in progress, but it implements OCM on an FPGA with 12-bit VGA compatibility. 
 
-- ECE 220 In Class Code: 
-  - Contains code that was covers in ECE 220 (during class, specific examples for recursion, trees, pointers, lists, and more)
-
-- HTML Files will have all of my projects dedicated to the coding language of HTML:
-  - Tutorial: mycodeacademy tutorial for HTML 
-  - CSS Tutorial with styling practice
-
-- Python Files will have copies from my desktop repo since I use a different interface than VSCode to run python: 
-  - contains games folder which has games that I have worked on to practice python, as well as learn pygame
-  - Machine Learning folder contains files from machine learning techniques that I have been learning 
-
-- JavaScript Files will have all of my projects dedicated to the coding language of JavaScript (and a little bit of typescript)
-  - Files for personal website  
-  - IOS Calculator App
-  - Tic Tac Toe Website Application
-
-- React Files will have all of my projects dedicated to building front end in react/react-native:
-  - Added work for a simple little application to get accustomed to React backend (with Javascript)
-
-- Greedy Algorithms will have a bunch of example problems that are similar to coding interview questions that I have done 
-  - Main language will be python for some, but C/C++ will also be another language I use, since it is crucial to have a core language. However, I will be doing python as well to get comfortable with arguably the most popular/user friendly/ versatile language out there 
-
+    - There is also "Web Development" which contains a bunch of React, HTML/CSS, and Javascript files used as small little projects to learn the language. My personal website code is also in here.
