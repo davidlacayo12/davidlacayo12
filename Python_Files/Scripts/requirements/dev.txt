@@ -1,0 +1,5 @@
+mypy
+black
+autodoc_pydantic
+Sphinx>=7.1.2, <8.0.0
+furo
